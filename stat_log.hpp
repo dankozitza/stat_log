@@ -4,15 +4,17 @@
 
 #include "log_mgr.hpp"
 
-// stat_log
-// 
-// capabilities:
-//    to be implemented into all functions with the ability to return int.
-//    Maybe modify to be able to return any object but to wrap status object 
-//    another object. Object's class would have to have return function.
+// NAME
+//
+//    stat_log
+//
+// SYNOPSYS
+//
+//    to be implemented in functions and used to track activity/status.
+//    Maybe modify to be able to return anything.
 //
 // to do:
-//    - get basic status conditions defined and accessable
+//
 //    - create some way of storing the last used status object, preferably one
 //      that will allow for multiple processes
 //          - could use diskhash,
@@ -22,6 +24,8 @@
 //    - use conf.h to store global status
 //    - add status checker in destructor
 //    - implement this class in a go method
+//    - make identifier go deeper
+//    - store some status history in conf and print on error/fail/fatal
 
 class stat_log {
 

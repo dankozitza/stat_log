@@ -19,6 +19,16 @@
 //    APPDATA env variable on windows. File will be named .conf_generic.conf on
 //    *nix and conf_generic.conf on windows. It is strongly suggested that you
 //    set your own config file location per application.
+//  
+//  NOTES
+//
+//    Conf objects cannot be initialized with:
+//
+//       conf* config;
+//
+//    conf only uses a single instance for storing the configuration map. use:
+//
+//       conf* config = conf::inst();
 //
 
 #include <fstream>
@@ -36,7 +46,7 @@ class conf {
       bool defined(std::string const& key);
       bool get(std::string const& key, std::string& val);
       const char* get(std::string const& key);
-      int get(std::string const& key, int& val);
+      int get(std::string const& key, int val);
       bool set(std::string const& key, std::string const& val);
 
    private:

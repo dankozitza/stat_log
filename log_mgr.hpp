@@ -32,7 +32,7 @@ class log_mgr {
             log_file = config->get("log_file");
          }
          if (config->defined("write_to_stdout")) {
-            to_stdout_flag = config->get("write_to_stdout", 0);
+            to_stdout_flag = config->get(std::string("write_to_stdout"), (int) 0);
          }
          if (config->defined("write_to_file")) {
             to_file_flag = config->get("write_to_file", 0);

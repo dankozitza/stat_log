@@ -123,6 +123,7 @@ bool conf::defined(std::string const& key) {
               int get (const string &key, int val)
 
    synopsis
+
       gives a pointer or a copy of the value associated with the given key.
 
 */
@@ -140,7 +141,7 @@ const char* conf::get(std::string const& key) {
    return settings->operator[](key).c_str();
 }
 
-int conf::get(std::string const& key, int &val) {
+int conf::get(std::string const& key, int val) {
 
    val = atoi(settings->operator[](key).c_str());
    return atoi(settings->operator[](key).c_str());

@@ -1,4 +1,4 @@
-#include "stat_log.h"
+#include "stat_log.hpp"
 
 stat_log::stat_log() {};
 
