@@ -43,7 +43,7 @@ int main() {
 
    log.msg("test message 1 using log.msg()");
 
-   log.msg("test message 2 using log.msg(). testing return character \\n in log.msg();\nsection of message after a return character.\nHAHA and yet another return character!");
+   log.msg("test message 2 using log.msg(). testing return character \\n in log.msg();\nsection of message after a return character.");
 
    log.msg("testing status.pass();");
 
