@@ -26,7 +26,7 @@
 //
 //       conf* config;
 //
-//    conf only uses a single instance for storing the configuration map. use:
+//    conf uses a single instance for storing the settings map. use:
 //
 //       conf* config = conf::inst();
 //
