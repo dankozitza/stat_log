@@ -14,7 +14,7 @@ stat_log:
 	$(CC) $(CSTDFL) stat_log.hpp
 
 test:
-	$(CC) $(CSTDFL) stat_test.cpp -o stat_test
+	$(CC) $(CSTDFL) cls_test.cpp -o stat_test
 	./stat_test | ./add_color.pl
 
 clean:

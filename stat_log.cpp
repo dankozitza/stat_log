@@ -5,7 +5,6 @@ stat_log::stat_log() {};
 stat_log::stat_log(const char* identifier) {
    id = identifier;
    log.set_id(id);
-   //log.set_file("/tad/log/xfs_crawl.log");
 }
 
 //~stat() {
