@@ -31,10 +31,10 @@
 //       conf* config = conf::inst();
 //
 
-//#include <fstream>
-//#include <iostream>
+#include <fstream>
+#include <iostream>
 #include <string.h>
-//#include <map>
+#include <map>
 #include <stdlib.h>
 
 class conf {
